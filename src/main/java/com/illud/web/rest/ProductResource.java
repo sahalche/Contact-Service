@@ -87,6 +87,7 @@ public class ProductResource {
     @GetMapping("/products")
     public List<Product> getAllProducts() {
         log.debug("REST request to get all Products");
+System.out.println("Helloooooooooooooooooooooooooooooooo");
         return productRepository.findAll();
     }
 
