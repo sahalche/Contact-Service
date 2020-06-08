@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.illud"
+    },
+    "jhipsterVersion": "6.7.1",
+    "applicationType": "microservice",
+    "baseName": "contact",
+    "packageName": "com.illud",
+    "packageFolder": "com/illud",
+    "serverPort": "8082",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YWMwZDRkOWUxOTU0ZGQ3YzNlODBmZjE0MzFiOTQxM2MzNjRkYmU0MDRmNjdjZWM5ZWNjOTVhMTcwZWE4YzE0YmI3OGMyODRlMTAwMDhmN2UxMzY2MTJiMTc4MzUyN2U4MjIyNmViMjRmN2JmNWQ4Y2Q5ODJmNGQ2MjFjNjI2ZTI=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1591532389268,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

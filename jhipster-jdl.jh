@@ -1,0 +1,7 @@
+
+entity Product{
+name String,
+image Blob,
+imageUriLink String
+}
+
