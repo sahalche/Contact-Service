@@ -1,15 +1,14 @@
-version: '2'
+version: '3.7'
 services:
   jenkins:
     image: jenkins/jenkins:lts
-    ports:
-      - 49001:8080
-      - 50000:50000
-    # uncomment for docker in docker
     privileged: true
+    user: root
+    ports:
+      - 8081:8080
+      - 50000:50000
+    container_name: jenkins
     volumes:
-    # enable persistent volume (warning: make sure that the local jenkins_home folder is created)
-    - ~/volumes/jenkins_home:/var/jenkins_home
-    # mount docker sock and binary for docker in docker (only works on linux)
-    - /var/run/docker.sock:/var/run/docker.sock
-    - /usr/bin/docker:/usr/bin/docker
+      - ~/jenkins:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin/docker:/usr/local/bin/docker
